@@ -178,7 +178,7 @@ public:
 		Entity::modelToWorld(m);
 
 		// When changing modelToWorld, also update the world-space AABB.
-		aabb_ = Mesh::getAABB();
+		computeAABB();
 	}
 
 	virtual AABB getAABB() const override
