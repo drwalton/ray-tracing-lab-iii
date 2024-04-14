@@ -151,7 +151,7 @@ Eigen::Vector3f coefftWiseMul(const Eigen::Vector3f& left, const Eigen::Vector3f
 /// <summary>
 /// Given a list of renderables, finds an AABB surrounding them all.
 /// </summary>
-static AABB getRenderablesAABB(const std::vector<std::shared_ptr<Renderable>>& renderables)
+AABB getRenderablesAABB(const std::vector<std::shared_ptr<Renderable>>& renderables)
 {
 	AABB aabb;
 	// **** YOUR CODE HERE ****
