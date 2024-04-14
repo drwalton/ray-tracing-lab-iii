@@ -16,8 +16,6 @@
 #include "LambertianShader.hpp"
 #include "TexturedLambertianShader.hpp"
 #include "PhongShader.hpp"
-#include "RefractionShader.hpp"
-#include "SchlickRefractionShader.hpp"
 #include "MirrorShader.hpp"
 #include "TexCoordTestShader.hpp"
 #include "Model.hpp"
@@ -77,8 +75,6 @@ int main(int argc, char* argv[]) {
 	LambertianShader aquaLambertianShader(aqua);
 	LambertianShader lavenderLambertianShader(lavender);
 	TexturedLambertianShader spotShader(&spotTexture);
-	//RefractionShader refractionShader(1.1f);
-	SchlickRefractionShader refractionShader(1.1f);
 	MirrorShader mirrorShader;
 	TexCoordTestShader texCoordTestShader;
 
